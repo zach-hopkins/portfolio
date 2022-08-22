@@ -10,6 +10,7 @@ specifiers:
   prettier: ^2.6.2
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.44.0
+  svelte-loading-spinners: ^0.1.7
   vite: ^3.0.4
 
 devDependencies:
@@ -22,6 +23,7 @@ devDependencies:
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
   svelte: 3.49.0
+  svelte-loading-spinners: 0.1.7
   vite: 3.0.9
 
 packages:
@@ -1555,6 +1557,10 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.49.0
+    dev: true
+
+  /svelte-loading-spinners/0.1.7:
+    resolution: {integrity: sha512-EKCId1DjVL2RSUVJJsvtNcqQHox03XIgh4xh/4p7r6ST7d8mut6INY9/LqK4A17PFU64+3quZmqiSfOlf480CA==}
     dev: true
 
   /svelte/3.49.0:

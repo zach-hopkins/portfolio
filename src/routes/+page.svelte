@@ -4,38 +4,36 @@
 	import LinkedinIcon from '../lib/linkedin.svelte';
 </script>
 
-<body>
-	<main class="main">
-		<a id="about" class="about">
-			<div class="container">
-				<img class="headshot" src="/headshot.jpeg" alt="headshot" />
-				<div class="splash-text">
-					<p class="about-header">Suri Ravi_</p>
-					<div class="about-subheader">
-						<p>Full Stack Developer, Entrepreneur</p>
-					</div>
-					<br />
-					<div class="about-normal">
-						<p>AGE:<span>26</span></p>
-						<p>PHONE:<span>+1 (800) 800-2321</span></p>
-						<p>EMAIL:<span>zh934@gmail.edu</span></p>
-						<p>AREA:<span>Phoenix, AZ</span></p>
-					</div>
-					<div class="social-icons">
-						<a href="" target="_blank"><GithubIcon /></a>
-						<a href="" target="_blank"><LinkedinIcon /></a>
-						<a href="" target="_blank"><FacebookIcon /></a>
-					</div>
+<main class="main">
+	<a id="about" class="about">
+		<div class="container">
+			<img class="headshot" src="/headshot.jpeg" alt="headshot" />
+			<div class="splash-text">
+				<p class="about-header">Suri Ravi_</p>
+				<div class="about-subheader">
+					<p>Full Stack Developer, Entrepreneur</p>
 				</div>
-			</div></a
-		>
-		<a id="intro" class="intro">
-			<div class="hi">
-				<p class="intro-header typewriter">Intro_</p>
+				<br />
+				<div class="about-normal">
+					<p>AGE:<span>26</span></p>
+					<p>PHONE:<span>+1 (800) 800-2321</span></p>
+					<p>EMAIL:<span>zh934@gmail.edu</span></p>
+					<p>AREA:<span>Phoenix, AZ</span></p>
+				</div>
+				<div class="social-icons">
+					<a href="" target="_blank"><GithubIcon /></a>
+					<a href="" target="_blank"><LinkedinIcon /></a>
+					<a href="" target="_blank"><FacebookIcon /></a>
+				</div>
 			</div>
-		</a>
-	</main>
-</body>
+		</div></a
+	>
+	<a id="intro" class="intro">
+		<div class="hi">
+			<p class="intro-header typewriter">Intro_</p>
+		</div>
+	</a>
+</main>
 
 <style>
 	:root {
