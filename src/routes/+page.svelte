@@ -22,11 +22,6 @@
 						<p>AREA:<span>Phoenix, AZ</span></p>
 					</div>
 					<div class="social-icons">
-						<!-- 						<a href="https://github.com/zach-hopkins" target="_blank"><GithubIcon /></a>
-						<a href="https://www.linkedin.com/in/zachary-a-hopkins/" target="_blank"
-							><LinkedinIcon /></a
-						>
-						<a href="https://www.facebook.com/zach.hopkins.391" target="_blank"><FacebookIcon /></a> -->
 						<a href="" target="_blank"><GithubIcon /></a>
 						<a href="" target="_blank"><LinkedinIcon /></a>
 						<a href="" target="_blank"><FacebookIcon /></a>
