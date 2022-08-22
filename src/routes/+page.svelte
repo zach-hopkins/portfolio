@@ -1,13 +1,14 @@
 <script>
-	import GithubIcon from '../lib/github.svelte';
-	import FacebookIcon from '../lib/facebook.svelte';
-	import LinkedinIcon from '../lib/linkedin.svelte';
+	import headshot from '$lib/assets/headshot.jpeg';
+	import GithubIcon from '$lib/assets/github.svelte';
+	import FacebookIcon from '$lib/assets/facebook.svelte';
+	import LinkedinIcon from '$lib/assets/linkedin.svelte';
 </script>
 
 <main class="main">
 	<a id="about" class="about">
 		<div class="container">
-			<img class="headshot" src="/headshot.jpeg" alt="headshot" />
+			<img class="headshot" src={headshot} alt="headshot" />
 			<div class="splash-text">
 				<p class="about-header">Suri Ravi_</p>
 				<div class="about-subheader">
@@ -21,9 +22,11 @@
 					<p>AREA:<span>Phoenix, AZ</span></p>
 				</div>
 				<div class="social-icons">
-					<a href="" target="_blank"><GithubIcon /></a>
-					<a href="" target="_blank"><LinkedinIcon /></a>
-					<a href="" target="_blank"><FacebookIcon /></a>
+					<a href="https://github.com/zach-hopkins" target="_blank"><GithubIcon /></a>
+					<a href="https://www.linkedin.com/in/zachary-a-hopkins/" target="_blank"
+						><LinkedinIcon /></a
+					>
+					<a href="https://www.facebook.com/zach.hopkins.391" target="_blank"><FacebookIcon /></a>
 				</div>
 			</div>
 		</div></a
@@ -48,6 +51,14 @@
 		padding-left: 20rem;
 		height: 54rem;
 	}
+	.container::before {
+		background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0, 34%, 71%, 0.95));
+		content: '';
+		z-index: 0;
+		width: 250vh;
+		height: 100%;
+		position: absolute;
+	}
 	.container {
 		content: '';
 		position: absolute;
@@ -56,18 +67,11 @@
 		height: 46.8rem;
 		margin-left: -21.6rem;
 		margin-top: -0.82rem;
-		background-image: url('/texture.jpg');
+		background-image: url('$lib/assets/texture.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	.container::before {
-		background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0, 34%, 71%, 0.95));
-		content: '';
-		z-index: 0;
-		width: 215vh;
-		height: 100%;
-		position: absolute;
-	}
+
 	.headshot {
 		position: relative;
 		width: 31.5rem;
