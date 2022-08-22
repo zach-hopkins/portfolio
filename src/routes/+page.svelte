@@ -10,23 +10,26 @@
 			<div class="container">
 				<img class="headshot" src="/headshot.jpeg" alt="headshot" />
 				<div class="splash-text">
-					<p class="about-header">Zach Hopkins_</p>
+					<p class="about-header">Suri Ravi_</p>
 					<div class="about-subheader">
 						<p>Full Stack Developer, Entrepreneur</p>
 					</div>
 					<br />
 					<div class="about-normal">
 						<p>AGE:<span>26</span></p>
-						<p>PHONE:<span>+1 (623) 800-2321</span></p>
-						<p>EMAIL:<span>zh93@nau.edu</span></p>
+						<p>PHONE:<span>+1 (800) 800-2321</span></p>
+						<p>EMAIL:<span>zh934@gmail.edu</span></p>
 						<p>AREA:<span>Phoenix, AZ</span></p>
 					</div>
 					<div class="social-icons">
-						<a href="https://github.com/zach-hopkins" target="_blank"><GithubIcon /></a>
+						<!-- 						<a href="https://github.com/zach-hopkins" target="_blank"><GithubIcon /></a>
 						<a href="https://www.linkedin.com/in/zachary-a-hopkins/" target="_blank"
 							><LinkedinIcon /></a
 						>
-						<a href="https://www.facebook.com/zach.hopkins.391" target="_blank"><FacebookIcon /></a>
+						<a href="https://www.facebook.com/zach.hopkins.391" target="_blank"><FacebookIcon /></a> -->
+						<a href="" target="_blank"><GithubIcon /></a>
+						<a href="" target="_blank"><LinkedinIcon /></a>
+						<a href="" target="_blank"><FacebookIcon /></a>
 					</div>
 				</div>
 			</div></a
