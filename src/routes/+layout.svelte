@@ -14,13 +14,14 @@
 	}
 	.nav {
 		font-size: 1.6rem;
-		padding-left: 20rem;
 		position: fixed;
 		width: 144rem;
+		overflow: hidden;
 		height: 7rem;
 	}
 	.links {
 		position: relative;
+		padding-left: 20rem;
 	}
 	.links > a {
 		text-decoration: none;

@@ -1,4 +1,4 @@
-<script async>
+<script async context="module">
 	import '@fontsource/roboto-mono';
 	import GithubIcon from '$lib/assets/github.svelte';
 	import FacebookIcon from '$lib/assets/facebook.svelte';
@@ -6,72 +6,58 @@
 </script>
 
 <main class="main">
-	<a id="about" class="about">
-		<div class="container">
-			<img class="headshot" src="/headshot.avif" alt="headshot" />
-			<div class="splash-text">
-				<p class="about-header">Suri Ravi_</p>
-				<div class="about-subheader">
-					<p>Full Stack Developer, Entrepreneur</p>
-				</div>
-				<br />
-				<div class="about-normal">
-					<p>AGE:<span>26</span></p>
-					<p>PHONE:<span>+1 (800) 800-2321</span></p>
-					<p>EMAIL:<span>zh934@gmail.edu</span></p>
-					<p>AREA:<span>Phoenix, AZ</span></p>
-				</div>
-				<div class="social-icons">
-					<a href="https://github.com/zach-hopkins" target="_blank"><GithubIcon /></a>
-					<a href="https://www.linkedin.com/in/zachary-a-hopkins/" target="_blank"
-						><LinkedinIcon /></a
-					>
-					<a href="https://www.facebook.com/zach.hopkins.391" target="_blank"><FacebookIcon /></a>
-				</div>
+	<div class="container">
+		<img class="headshot" src="/headshot.avif" alt="headshot" />
+		<div class="splash-text">
+			<p class="about-header">Suri Ravi_</p>
+			<div class="about-subheader">
+				<p>Full Stack Developer, Entrepreneur</p>
 			</div>
-		</div></a
-	>
-	<a id="intro" class="intro">
-		<div class="hi">
-			<p class="intro-header typewriter">Intro_</p>
+			<br />
+			<div class="about-normal">
+				<p>AGE:<span>26</span></p>
+				<p>PHONE:<span>+1 (800) 800-2321</span></p>
+				<p>EMAIL:<span>zh934@gmail.edu</span></p>
+				<p>AREA:<span>Phoenix, AZ</span></p>
+			</div>
+			<div class="social-icons">
+				<a href="https://github.com/zach-hopkins" target="_blank"><GithubIcon /></a>
+				<a href="https://www.linkedin.com/in/zachary-a-hopkins/" target="_blank"><LinkedinIcon /></a
+				>
+				<a href="https://www.facebook.com/zach.hopkins.391" target="_blank"><FacebookIcon /></a>
+			</div>
 		</div>
-	</a>
+	</div>
+	<div class="intro">
+		<p class="intro-header typewriter">Intro_</p>
+	</div>
 </main>
 
 <style>
 	:root {
 		font-size: 62.5%;
+		margin-left: -0.8rem;
 	}
 	.main {
 		font-size: 1.6rem;
-		display: grid;
 		position: absolute;
+		width: 100%;
+		z-index: -1;
 	}
 	.about {
-		padding-left: 20rem;
 		height: 54rem;
 	}
-	.container::before {
-		background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0, 34%, 71%, 0.95));
-		content: '';
-		z-index: 0;
-		width: 250vh;
-		height: 100%;
-		position: absolute;
-	}
 	.container {
-		content: '';
 		position: absolute;
 		z-index: -1;
-		width: 100vw;
+		width: 100%;
 		height: 46.8rem;
-		margin-left: -21.6rem;
 		margin-top: -0.82rem;
-		background-image: url('/texture.avif');
-		background-size: cover;
+		background-image: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0, 34%, 71%, 0.95)),
+			url('/texture.avif');
+		background-size: 100%;
 		background-repeat: no-repeat;
 	}
-
 	.headshot {
 		position: relative;
 		width: 31.5rem;
@@ -85,7 +71,7 @@
 	}
 	.about-header {
 		position: relative;
-		width: auto;
+		width: max-content;
 		height: 32px;
 		left: 78.1rem;
 		top: -32.5rem;
@@ -99,7 +85,7 @@
 	}
 	.about-subheader {
 		position: relative;
-		width: auto;
+		width: max-content;
 		height: 3.8rem;
 		left: 78.1rem;
 		top: -36.1rem;
@@ -113,7 +99,7 @@
 	}
 	.about-normal {
 		position: relative;
-		width: auto;
+		width: 50rem;
 		left: 78.1rem;
 		top: -36.1rem;
 		font-family: 'Roboto Mono', monospace;
@@ -136,6 +122,7 @@
 
 	.social-icons {
 		position: relative;
+		width: max-content;
 		top: -34rem;
 		left: 78.1rem;
 	}
@@ -149,10 +136,13 @@
 		fill: #fff;
 		opacity: 0.85;
 	}
-	.hi {
-		position: relative;
-		display: inline-block;
+
+	.intro {
+		display: absolute;
+		margin-top: 55rem;
+		z-index: -1;
 	}
+
 	.intro-header {
 		display: inline-block;
 		position: relative;
@@ -169,7 +159,7 @@
 		margin-top: 0.5rem;
 		white-space: nowrap; /* Keeps the content on a single line */
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-		animation: typing 1.5s steps(40, end);
+		animation: typing 5.5s steps(150, end);
 	}
 	@keyframes typing {
 		from {
