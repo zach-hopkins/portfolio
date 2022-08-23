@@ -5,7 +5,7 @@
 		position: relative;
 		width: 31.5rem;
 		height: 38rem;
-		left: 40rem;
+		left: 20rem;
 		top: 11.7rem;
 		z-index: 1;
 		object-fit: cover;

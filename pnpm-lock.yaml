@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/roboto': ^4.5.8
   '@fontsource/roboto-mono': ^4.5.8
   '@sveltejs/adapter-auto': next
   '@sveltejs/adapter-static': 1.0.0-next.39
@@ -15,6 +16,7 @@ specifiers:
   vite: ^3.0.4
 
 dependencies:
+  '@fontsource/roboto': 4.5.8
   '@fontsource/roboto-mono': 4.5.8
 
 devDependencies:
@@ -64,6 +66,10 @@ packages:
 
   /@fontsource/roboto-mono/4.5.8:
     resolution: {integrity: sha512-AW44UkbQD0w1CT5mzDbsvhGZ6/bb0YmZzoELj6Sx8vcVEzcbYGUdt2Dtl5zqlOuYMWQFY1mniwWyVv+Bm/lVxw==}
+    dev: false
+
+  /@fontsource/roboto/4.5.8:
+    resolution: {integrity: sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA==}
     dev: false
 
   /@humanwhocodes/config-array/0.10.4:
