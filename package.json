@@ -22,5 +22,8 @@
 		"svelte-loading-spinners": "^0.1.7",
 		"vite": "^3.0.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fontsource/roboto-mono": "^4.5.8"
+	}
 }

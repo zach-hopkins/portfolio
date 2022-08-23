@@ -1,4 +1,5 @@
-<script>
+<script async>
+	import '@fontsource/roboto-mono';
 	import headshot from '$lib/assets/headshot.jpeg';
 	import GithubIcon from '$lib/assets/github.svelte';
 	import FacebookIcon from '$lib/assets/facebook.svelte';
@@ -90,8 +91,8 @@
 		left: 78.1rem;
 		top: -32.5rem;
 		z-index: 2;
-		font-family: 'Roboto Mono';
-		font-weight: 500;
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 700;
 		font-size: 4.4rem;
 		line-height: 5.8rem;
 		align-items: center;
@@ -104,8 +105,8 @@
 		left: 78.1rem;
 		top: -36.1rem;
 		z-index: 2;
-		font-family: 'Roboto Mono';
-		font-weight: 500;
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 600;
 		font-size: 1.6rem;
 		line-height: 5.8rem;
 		align-items: center;
@@ -116,7 +117,7 @@
 		width: auto;
 		left: 78.1rem;
 		top: -36.1rem;
-		font-family: 'Roboto Mono';
+		font-family: 'Roboto Mono', monospace;
 		font-weight: 500;
 		font-size: 1.6rem;
 		line-height: 2.4rem;
@@ -157,7 +158,7 @@
 		display: inline-block;
 		position: relative;
 		font-family: 'Roboto Mono', monospace;
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 3.6rem;
 		line-height: 4.7rem;
 		padding-top: 2rem;

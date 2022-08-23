@@ -32,7 +32,7 @@
 		margin-right: 5rem;
 
 		font-family: 'Roboto Mono', monospace;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 1.4rem;
 		line-height: 1.8rem;
 
