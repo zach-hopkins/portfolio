@@ -36,23 +36,23 @@
 	.nav {
 		font-size: 1.6rem;
 		position: fixed;
-		width: 144rem;
+		width: 100%;
 		overflow: hidden;
 		height: 7.8rem;
 		color: #fff;
 		transition: 0.35s;
 	}
 	.nav-scrolled {
-		background-color: #fff;
+		background-color: rgba(232, 217, 216);
 		color: #555;
 		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.14);
 		/*copied*/
 		font-size: 1.6rem;
 		position: fixed;
-		width: 144rem;
+		width: 100%;
 		overflow: hidden;
 		height: 7rem;
-		transition: 0.8s;
+		transition: 0.5s;
 	}
 	.links {
 		position: relative;
