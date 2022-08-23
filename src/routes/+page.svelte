@@ -1,6 +1,5 @@
 <script async>
 	import '@fontsource/roboto-mono';
-	import headshot from '$lib/assets/headshot.jpeg';
 	import GithubIcon from '$lib/assets/github.svelte';
 	import FacebookIcon from '$lib/assets/facebook.svelte';
 	import LinkedinIcon from '$lib/assets/linkedin.svelte';
@@ -9,7 +8,7 @@
 <main class="main">
 	<a id="about" class="about">
 		<div class="container">
-			<img class="headshot" src={headshot} alt="headshot" />
+			<img class="headshot" src="/headshot.avif" alt="headshot" />
 			<div class="splash-text">
 				<p class="about-header">Suri Ravi_</p>
 				<div class="about-subheader">
@@ -68,7 +67,7 @@
 		height: 46.8rem;
 		margin-left: -21.6rem;
 		margin-top: -0.82rem;
-		background-image: url('$lib/assets/texture.jpg');
+		background-image: url('/texture.avif');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
