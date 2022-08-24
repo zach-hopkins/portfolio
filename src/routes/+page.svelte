@@ -7,8 +7,12 @@
 	import Headshot from '$lib/assets/headshot.svelte';
 </script>
 
-<main class="main">
-	<div class="container">
+<main class="absolute z-[-1] text-[1.6rem] w-full font-roboto">
+	<div
+		class="absolute z-[-1] w-full h-[46.8rem] bg-no-repeat bg-cover"
+		style="background-image: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0, 34%, 71%, 0.95)),
+	url('/texture.avif')"
+	>
 		<Headshot />
 		<div class="splash-text">
 			<p class="about-header">Zach Hopkins_</p>
@@ -44,29 +48,11 @@
 <style>
 	:root {
 		/* Production */
-		font-size: 82.5%;
+		font-size: 62.5%;
 		/* Standard Base 10 (10px:1rem) */
 		/* font-size: 62.5%; */
 		margin-top: -0.8rem;
 		margin-left: -0.8rem;
-	}
-	.main {
-		font-size: 1.6rem;
-		position: absolute;
-		width: 100%;
-		z-index: -1;
-		font-family: 'Roboto Mono', monospace;
-	}
-	.container {
-		position: absolute;
-		z-index: -1;
-		width: 100%;
-		height: 46.8rem;
-		margin-top: -0.82rem;
-		background-image: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, hsla(0, 34%, 71%, 0.95)),
-			url('/texture.avif');
-		background-size: 100%;
-		background-repeat: no-repeat;
 	}
 	.splash-text {
 		position: relative;

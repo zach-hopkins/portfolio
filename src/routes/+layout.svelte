@@ -1,4 +1,5 @@
 <script>
+	import '../app.css';
 	let y;
 	let navClass = '';
 
@@ -24,10 +25,10 @@
 	{/if}
 
 	<div class="links">
-		<a href="#intro">INTRO</a>
-		<a href="#resume">RESUME</a>
-		<a href="#portfolio">PORTFOLIO</a>
-		<a href="#contact">CONTACT</a>
+		<a class="font-roboto" href="#intro">INTRO</a>
+		<a class="font-roboto" href="#resume">RESUME</a>
+		<a class="font-roboto" href="#portfolio">PORTFOLIO</a>
+		<a class="font-roboto" href="#contact">CONTACT</a>
 	</div>
 </nav>
 <slot />
@@ -66,8 +67,7 @@
 		top: 3.5rem;
 		margin-right: 5rem;
 
-		font-family: 'Roboto Mono', monospace;
-		font-weight: 600;
+		font-weight: 400;
 		font-size: 1.4rem;
 		line-height: 1.8rem;
 
