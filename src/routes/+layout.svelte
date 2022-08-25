@@ -4,6 +4,7 @@
 	let navClass = '';
 
 	function changeNav() {
+		console.log('called');
 		if (navClass == 'nav-scrolled') {
 			navClass = '';
 		} else if (navClass == '' && y > 0) {
@@ -15,69 +16,60 @@
 
 <svelte:window bind:scrollY={y} />
 
-<nav id="nav" class="nav {navClass}">
-	{#if y > 1}
+<nav id="nav" class="{navClass} nav-default">
+	{#if y > 50}
 		{changeNav()}
 	{/if}
 
-	{#if y == 0}
+	{#if y < 50}
 		{changeNav()}
 	{/if}
-
-	<div class="links">
-		<a class="font-roboto" href="#intro">INTRO</a>
-		<a class="font-roboto" href="#resume">RESUME</a>
-		<a class="font-roboto" href="#portfolio">PORTFOLIO</a>
-		<a class="font-roboto" href="#contact">CONTACT</a>
+	<div class="relative">
+		<a
+			class="font-roboto relative w-20 h-8 left-80 top-14 mr-20 font-bold text-2xl text-inherit hover:opacity-40 transition ease-linear duration-4000"
+			href="#intro">INTRO</a
+		>
+		<a
+			class="font-roboto relative w-20 h-8 left-80 top-14 mr-20 font-bold text-2xl text-inherit hover:opacity-40 transition ease-linear duration-4000"
+			href="#resume">RESUME</a
+		>
+		<a
+			class="font-roboto relative w-20 h-8 left-80 top-14 mr-20 font-bold text-2xl text-inherit hover:opacity-40 transition ease-linear duration-4000"
+			href="#portfolio">PORTFOLIO</a
+		>
+		<a
+			class="font-roboto relative w-20 h-8 left-80 top-14 mr-20 font-bold text-2xl text-inherit hover:opacity-40 transition ease-linear duration-4000"
+			href="#contact">CONTACT</a
+		>
 	</div>
 </nav>
 <slot />
 
 <style>
-	.nav {
-		font-size: 1.6rem;
-		position: fixed;
-		width: 100%;
-		overflow: hidden;
-		height: 7.8rem;
-		color: #fff;
-		transition: 0.35s;
-	}
 	.nav-scrolled {
-		background-color: rgba(232, 217, 216);
-		color: #555;
+		background-color: rgb(238, 224, 223);
+		color: #555 !important;
 		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.14);
-		/*copied*/
-		font-size: 1.6rem;
+		font-size: 1.875rem;
 		position: fixed;
 		width: 100%;
 		overflow: hidden;
-		height: 7rem;
-		transition: 0.5s;
+		height: 8rem;
+		transition: none;
 	}
-	.links {
-		position: relative;
-	}
-	.links > a {
-		text-decoration: none;
-		position: relative;
-		width: 4.7rem;
-		height: 1.9rem;
-		left: 20rem;
-		top: 3.5rem;
-		margin-right: 5rem;
-
-		font-weight: 400;
-		font-size: 1.4rem;
-		line-height: 1.8rem;
-
-		/* identical to box height */
-
-		/* Nav Text */
-		/*color: #555555;*/
-		color: inherit;
-	}
-	.links > a:hover {
-		opacity: 0.4;
+	.nav-default {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+		position: fixed;
+		width: 100%;
+		overflow: hidden;
+		height: 8rem;
+		color: white;
+		z-index: 10;
+		transition: all;
+		transition-duration: 0.7s;
+		-moz-transition: 0.32s;
+		-moz-transition-timing-function: ease-in;
+		transition-timing-function: ease;
 	}
 </style>
